@@ -252,17 +252,17 @@ nav {
     font-weight: bold;
 }
 .developer-credit s  {
-    color: blue;
+    color: white;
     font-weight: bold;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-    .developer-credit,
-    .professional-credit {
+    .developer-credit {
         font-size: 0.9rem;
     }
 }
+
 
 
 

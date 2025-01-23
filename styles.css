@@ -5,8 +5,12 @@ body {
 }
 
 /* Main Header Styling */
+
+
+
+
 .main-header {
-    background: linear-gradient(135deg, #004085, #007bff);
+    background: linear-gradient(135deg, #007bff, #007bff);
     color: white;
     padding: 20px 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -87,59 +91,6 @@ nav {
     text-align: center;
     padding: 50px 20px;
 }
-
-/* Updated styles for Instagram and YouTube links */
-.social-link {
-    margin-top: 20px;
-    text-align: left;
-    font-size: 1rem;
-}
-
-.social-link p {
-    margin: 5px 0;
-    font-size: 1.2rem;
-    color: #555;
-    font-weight: bold;
-}
-
-.social-link a {
-    display: inline-block;
-    text-decoration: none;
-    transition: transform 0.3s ease, filter 0.3s ease;
-}
-
-.social-icon {
-    width: 50px;
-    height: 50px;
-    margin-top: 5px;
-    border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.social-icon:hover {
-    transform: scale(1.2);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.instagram a {
-    color: #E1306C;
-}
-
-.instagram .social-icon {
-    background: radial-gradient(circle, #E1306C, #833AB4);
-
-}
-
-.youtube a {
-    color: #FF0000;
-}
-
-.youtube .social-icon {
-    background: radial-gradient(circle, #FF0000, #CC0000);
-}
-
-
 
 .service-section {
     background: linear-gradient(135deg, #f0f4ff, #e8ecf8);
@@ -285,6 +236,33 @@ nav {
     filter: brightness(1.5);
 }
 
+
+/* Developer  Credit Styling */
+.developer-credit {
+    background: #111;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1rem;
+    border-top: 1px solid #333;
+}
+
+.developer-credit span  {
+    color: #ffdd57;
+    font-weight: bold;
+}
+.developer-credit s  {
+    color: blue;
+    font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .developer-credit,
+    .professional-credit {
+        font-size: 0.9rem;
+    }
+}
 
 
 

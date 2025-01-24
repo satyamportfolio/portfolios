@@ -4,13 +4,52 @@ body {
     padding: 0;
 }
 
+/* Define the keyframe animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply the animation to the home section */
+.animated-home {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+
+
 /* Main Header Styling */
 
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: none; /* Initially hidden */
+    z-index: 1000;
+    transition: opacity 0.3s ease;
+}
+
+.scroll-to-top:hover {
+    background: #0056b3;
+}
 
 
 
 .main-header {
-    background: linear-gradient(135deg, #007bff, #007bff);
+    background:  linear-gradient(135deg, #007bff, #007bff);
     color: white;
     padding: 20px 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -39,9 +78,22 @@ body {
 }
 
 nav {
-    margin-top: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensures it stays on top of other elements */
+    background-color: #007bff; /* Match the header background */
     text-align: center;
 }
+
+.main-header .profile-image {
+    margin-bottom: 20px; /* Creates spacing between the image and the menu */
+}
+
+
+//*  nav {  
+    margin-top: 20px;
+    text-align: center;
+} */
 
 .menu {
     list-style: none;

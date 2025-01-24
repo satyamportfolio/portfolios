@@ -8,10 +8,14 @@
 </head>
 <body>
     <!-- Header Section -->
+    <button id="scroll-to-top" class="scroll-to-top">⬆</button>
+
 <header class="main-header">
     <div class="container">
         <h1>Welcome to <span>Mr. Satyam Kumar</span>'s Portfolio</h1>
+       <div class="animated-home">
         <img src="11.jpg" alt="Satyam Kumar" class="profile-image">
+    </div>
         <nav>
             <ul class="menu">
                 <li><a href="#home" class="active">Home</a></li>
@@ -25,11 +29,12 @@
 
     <!-- Home Section -->
 <section id="home" class="home-section">
+     <div class="animated-home">
     <div class="home-content">
         <div class="intro-text">
             <h2>Hi there! I am <span>Satyam Kumar</span>.</h2>
             <p>Welcome to my personal space where I share my skills, services, and content. I’m a passionate Full Stack Developer with expertise in building dynamic and user-friendly applications.</p>
-            <a href="#contact" class="cta-button">Get in Touch</a>
+            <a href="#contact" class="cta-button">Contact Us</a>
         
         
         </div>
@@ -40,10 +45,9 @@
         </div>
     </div>
     </div>
+</div>
 </section>
 
-
-    </section>
 
    <!-- Service Section -->
 <section id="service" class="service-section">
@@ -192,6 +196,25 @@
 
 </footer>
 
+<script>
+    // Get the button element
+    const scrollToTopButton = document.getElementById('scroll-to-top');
+    const mainHeader = document.querySelector('.main-header');
+
+    // Show or hide the button based on scroll position
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 200) {
+            scrollToTopButton.style.display = 'block';
+        } else {
+            scrollToTopButton.style.display = 'none';
+        }
+    });
+
+    // Scroll to the top of the page when the button is clicked
+    scrollToTopButton.addEventListener('click', () => {
+        mainHeader.scrollIntoView({ behavior: 'smooth' });
+    });
+</script>
 
     
 

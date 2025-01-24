@@ -129,8 +129,8 @@ nav {
 @media (max-width: 768px) {
     .menu {
         flex-direction: column;
-        gap: 10px;
-        padding: 10px 0;
+        gap: 5px;
+        padding: 5px 0;
     }
 
     .menu a {

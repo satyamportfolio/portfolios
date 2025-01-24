@@ -204,9 +204,9 @@
     // Show or hide the button based on scroll position
     window.addEventListener('scroll', () => {
         if (window.scrollY > 200) {
-            scrollToTopButton.style.display = 'block';
+            scrollToTopButton.classList.add('visible');
         } else {
-            scrollToTopButton.style.display = 'none';
+            scrollToTopButton.classList.remove('visible');
         }
     });
 
@@ -215,6 +215,7 @@
         mainHeader.scrollIntoView({ behavior: 'smooth' });
     });
 </script>
+
 
     
 

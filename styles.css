@@ -25,25 +25,47 @@ body {
 
 /* Main Header Styling */
 
+/* Scroll-to-Top Button */
 .scroll-to-top {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background: #007bff;
+    background: linear-gradient(135deg, #007bff, #0056b3);
     color: white;
     border: none;
     border-radius: 50%;
     padding: 15px;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
     display: none; /* Initially hidden */
     z-index: 1000;
-    transition: opacity 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
+/* Hover effect */
 .scroll-to-top:hover {
-    background: #0056b3;
+    background: linear-gradient(135deg, #0056b3, #003d80);
+    transform: scale(1.1);
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Visible state with bounce */
+.scroll-to-top.visible {
+    display: block;
+    animation: bounce 2s infinite;
 }
 
 
